@@ -13,10 +13,8 @@
 		DBF17A231B0B648F004E6311 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBF17A211B0B648F004E6311 /* Main.storyboard */; };
 		DBF17A251B0B648F004E6311 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF17A241B0B648F004E6311 /* Images.xcassets */; };
 		DBF17A281B0B648F004E6311 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBF17A261B0B648F004E6311 /* LaunchScreen.xib */; };
-		DBF17A341B0B648F004E6311 /* Cake_ListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF17A331B0B648F004E6311 /* Cake_ListTests.m */; };
 		DBF17A3F1B0B8E16004E6311 /* CakeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF17A3E1B0B8E16004E6311 /* CakeCell.m */; };
 		DCDE171421F3487200D56AA0 /* CakeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCDE171321F3487200D56AA0 /* CakeCell.xib */; };
-		DCDE171821F34A7800D56AA0 /* UITableView+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE171721F34A7800D56AA0 /* UITableView+C.swift */; };
 		DCDE171B21F351C300D56AA0 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE171A21F351C300D56AA0 /* WebService.swift */; };
 		DCDE171C21F351C300D56AA0 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE171A21F351C300D56AA0 /* WebService.swift */; };
 		DCDE172021F35C6000D56AA0 /* MasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE171F21F35C6000D56AA0 /* MasterViewModel.swift */; };
@@ -25,6 +23,8 @@
 		DCDE172421F35D7B00D56AA0 /* CakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE172221F35D7B00D56AA0 /* CakeViewModel.swift */; };
 		DCDE172721F35E4800D56AA0 /* Cake.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE172621F35E4800D56AA0 /* Cake.swift */; };
 		DCDE172821F35E4800D56AA0 /* Cake.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE172621F35E4800D56AA0 /* Cake.swift */; };
+		DCDE172A21F37B3100D56AA0 /* UIImageView+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE172921F37B3100D56AA0 /* UIImageView+C.swift */; };
+		DCDE172B21F37B3100D56AA0 /* UIImageView+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE172921F37B3100D56AA0 /* UIImageView+C.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,6 @@
 		DBF17A3D1B0B8E16004E6311 /* CakeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CakeCell.h; sourceTree = "<group>"; };
 		DBF17A3E1B0B8E16004E6311 /* CakeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CakeCell.m; sourceTree = "<group>"; };
 		DCDE171321F3487200D56AA0 /* CakeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CakeCell.xib; sourceTree = "<group>"; };
-		DCDE171721F34A7800D56AA0 /* UITableView+C.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+C.swift"; sourceTree = "<group>"; };
 		DCDE171921F351C200D56AA0 /* Cake ListTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cake ListTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		DCDE171A21F351C300D56AA0 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		DCDE171D21F3521100D56AA0 /* Cake List-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Cake List-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -62,6 +61,7 @@
 		DCDE171F21F35C6000D56AA0 /* MasterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewModel.swift; sourceTree = "<group>"; };
 		DCDE172221F35D7B00D56AA0 /* CakeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeViewModel.swift; sourceTree = "<group>"; };
 		DCDE172621F35E4800D56AA0 /* Cake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cake.swift; sourceTree = "<group>"; };
+		DCDE172921F37B3100D56AA0 /* UIImageView+C.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+C.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +131,6 @@
 		DBF17A301B0B648F004E6311 /* Cake ListTests */ = {
 			isa = PBXGroup;
 			children = (
-				DBF17A331B0B648F004E6311 /* Cake_ListTests.m */,
 				DBF17A311B0B648F004E6311 /* Supporting Files */,
 			);
 			path = "Cake ListTests";
@@ -171,7 +170,7 @@
 		DCDE171521F34A5200D56AA0 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				DCDE171721F34A7800D56AA0 /* UITableView+C.swift */,
+				DCDE172921F37B3100D56AA0 /* UIImageView+C.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -228,7 +227,7 @@
 		DBF17A091B0B648F004E6311 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Stewart Hart";
 				TargetAttributes = {
 					DBF17A101B0B648F004E6311 = {
@@ -287,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCDE172A21F37B3100D56AA0 /* UIImageView+C.swift in Sources */,
 				DCDE171B21F351C300D56AA0 /* WebService.swift in Sources */,
 				DCDE172721F35E4800D56AA0 /* Cake.swift in Sources */,
 				DBF17A1A1B0B648F004E6311 /* AppDelegate.m in Sources */,
@@ -295,7 +295,6 @@
 				DBF17A171B0B648F004E6311 /* main.m in Sources */,
 				DCDE172021F35C6000D56AA0 /* MasterViewModel.swift in Sources */,
 				DCDE172321F35D7B00D56AA0 /* CakeViewModel.swift in Sources */,
-				DCDE171821F34A7800D56AA0 /* UITableView+C.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,8 +302,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCDE172B21F37B3100D56AA0 /* UIImageView+C.swift in Sources */,
 				DCDE171C21F351C300D56AA0 /* WebService.swift in Sources */,
-				DBF17A341B0B648F004E6311 /* Cake_ListTests.m in Sources */,
 				DCDE172821F35E4800D56AA0 /* Cake.swift in Sources */,
 				DCDE172421F35D7B00D56AA0 /* CakeViewModel.swift in Sources */,
 				DCDE172121F35C6000D56AA0 /* MasterViewModel.swift in Sources */,
@@ -349,13 +348,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -363,6 +372,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -397,13 +407,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -424,6 +444,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "Cake List/Cake List-Bridging-Header.h";
 				SWIFT_OBJC_INTERFACE_HEADER_NAME = "$(PROJECT_NAME)-Swift.h";
 				SWIFT_VERSION = 4.0;
@@ -438,6 +459,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Cake List/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.waracle.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Cake List/Cake List-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -452,6 +474,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Cake List/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.waracle.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Cake List/Cake List-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
@@ -464,16 +487,14 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Cake ListTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.waracle.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Cake List/Cake ListTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -488,12 +509,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Cake ListTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.waracle.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Cake List/Cake ListTests-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;

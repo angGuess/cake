@@ -11,33 +11,15 @@ let CacheTime = "cache_time"
 public typealias CompletionHandler<T: Codable> = (T?, Error?) -> Void
 @objc class WebService: NSObject {
     
-    func uRLSession(endpoint: String?, completionHandler: @escaping (_ data: Data?, _ error: Error?) -> ()) {
-        guard let endpoint = endpoint else { return }
+    func performURLSession<T: Codable> (codableType: T.Type, endpoint: String?, completionHandler: @escaping CompletionHandler<T>) {
+        guard let endpoint = endpoint else {
+            completionHandler(nil, nil)
+            return
+        }
         guard let url = URL(string: endpoint) else {
             print("Error: cannot create URL")
             completionHandler(nil, nil)
             return
-        }
-        let urlRequest = URLRequest(url: url)
-        let config = URLSessionConfiguration.default
-        let session = URLSession(configuration: config)
-        let task = session.dataTask(with: urlRequest) {
-            (data, response, error) in
-            completionHandler(data, error)
-        }
-        task.resume()
-    }
-    
-    @discardableResult
-    func performURLSession<T: Codable> (codableType: T.Type, endpoint: String?, completionHandler: @escaping CompletionHandler<T>) -> URLSessionDataTask? {
-        guard let endpoint = endpoint else {
-            completionHandler(nil, nil)
-            return nil
-        }
-        guard let url = URL(string: endpoint) else {
-            print("Error: cannot create URL")
-            completionHandler(nil, nil)
-            return nil
         }
         var urlRequest = URLRequest(url: url)
         urlRequest.timeoutInterval = 60
@@ -49,7 +31,7 @@ public typealias CompletionHandler<T: Codable> = (T?, Error?) -> Void
                                     data: response.data,
                                     error: nil,
                                     completionHandler: completionHandler)
-            return nil
+            return
         }
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
@@ -64,7 +46,6 @@ public typealias CompletionHandler<T: Codable> = (T?, Error?) -> Void
                                     completionHandler: completionHandler)
         }
         task.resume()
-        return task
     }
     
     private func handleResponseData<T: Codable> (codableType: T.Type, fromCache: Bool, request: URLRequest, response: URLResponse?, data: Data?, error: Error?, completionHandler: @escaping CompletionHandler<T>) {

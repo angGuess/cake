@@ -11,9 +11,9 @@ let endpoint = "https://gist.githubusercontent.com/hart88/198f29ec5114a3ec3460/r
 
 @objcMembers
 class MasterViewModel: NSObject {
-    var title = "Cake List"
+    var title = "Cake - List"
     var webService: WebService
-    var viewModels: [CakeViewModel]?
+    var viewModels = [CakeViewModel]()
     
     init(webService: WebService, completion: @escaping () -> Void) {
         self.webService = webService
@@ -30,7 +30,7 @@ class MasterViewModel: NSObject {
 extension MasterViewModel {
     @objc var itemCount: Int {
         get {
-            return self.viewModels?.count ?? 0
+            return self.viewModels.count
         }
     }
     

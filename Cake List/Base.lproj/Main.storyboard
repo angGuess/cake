@@ -35,8 +35,8 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections/>
                         <connections>
-                            <outlet property="dataSource" destination="pGg-6v-bdr" id="P41-gY-KXY"/>
-                            <outlet property="delegate" destination="pGg-6v-bdr" id="Y6K-Cp-Qkv"/>
+                            <outlet property="dataSource" destination="pGg-6v-bdr" id="TAp-3b-8oI"/>
+                            <outlet property="delegate" destination="pGg-6v-bdr" id="2m8-DK-Nki"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Cake List" id="tQt-TN-PWz"/>

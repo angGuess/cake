@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="417" height="127.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hk2-bX-0Jh">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hk2-bX-0Jh">
                         <rect key="frame" x="8" y="8" width="60" height="60"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="iL3-0J-FYz"/>
@@ -26,24 +26,24 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dvZ-ju-zN0">
-                        <rect key="frame" x="76" y="19" width="305" height="19.5"/>
+                        <rect key="frame" x="76" y="8" width="305" height="19.5"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcV-fc-7g8">
-                        <rect key="frame" x="76" y="42.5" width="305" height="17"/>
+                        <rect key="frame" x="76" y="35.5" width="305" height="17"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="PcV-fc-7g8" firstAttribute="top" secondItem="dvZ-ju-zN0" secondAttribute="bottom" constant="8" id="4MQ-RM-0PX"/>
                     <constraint firstItem="dvZ-ju-zN0" firstAttribute="leading" secondItem="Hk2-bX-0Jh" secondAttribute="trailing" constant="8" id="8Ta-xz-vas"/>
                     <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Hk2-bX-0Jh" secondAttribute="bottom" constant="19.5" id="Fuo-Jc-UK3"/>
                     <constraint firstItem="Hk2-bX-0Jh" firstAttribute="leading" secondItem="s5B-3A-lcg" secondAttribute="leading" constant="8" id="GqD-o7-cie"/>
-                    <constraint firstItem="dvZ-ju-zN0" firstAttribute="top" secondItem="s5B-3A-lcg" secondAttribute="topMargin" constant="8" id="Hdy-57-zGz"/>
-                    <constraint firstItem="PcV-fc-7g8" firstAttribute="top" secondItem="dvZ-ju-zN0" secondAttribute="bottom" constant="4" id="Vcf-8E-wAV"/>
+                    <constraint firstItem="dvZ-ju-zN0" firstAttribute="top" secondItem="s5B-3A-lcg" secondAttribute="top" constant="8" id="fjv-oC-HXq"/>
                     <constraint firstAttribute="trailingMargin" secondItem="dvZ-ju-zN0" secondAttribute="trailing" constant="16" id="jl5-8m-8Fm"/>
                     <constraint firstAttribute="trailingMargin" secondItem="PcV-fc-7g8" secondAttribute="trailing" constant="16" id="lre-CH-lTd"/>
                     <constraint firstItem="Hk2-bX-0Jh" firstAttribute="top" secondItem="s5B-3A-lcg" secondAttribute="top" constant="8" id="pxz-Q2-cBz"/>
