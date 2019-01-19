@@ -10,38 +10,44 @@
 #import "CakeCell.h"
 
 @interface MasterViewController ()
-@property (strong, nonatomic) NSArray *objects;
+@property (strong, nonatomic) MasterViewModel *viewModel;
 @end
 
 @implementation MasterViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self getData];
+    UINib *nib =  [UINib nibWithNibName:@"CakeCell" bundle:nil];
+    [self.tableView registerNib:nib forCellReuseIdentifier:@"Cell"];
+//    [self getData];
+    WebService *service = [WebService new];
+    self.viewModel = [[MasterViewModel alloc] initWithWebService:service completion:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+        });
+    }];
+    self.tableView.dataSource = self;
 }
 
 #pragma mark - Table View
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
-}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.objects.count;
+    return self.viewModel.itemCount;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    CakeCell *cell = (CakeCell*)[tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    
-    NSDictionary *object = self.objects[indexPath.row];
-    cell.titleLabel.text = object[@"title"];
-    cell.descriptionLabel.text = object[@"desc"];
+    CakeCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+
+//    NSDictionary *object = self.objects[indexPath.row];
+//    cell.titleLabel.text = object[@"title"];
+//    cell.descriptionLabel.text = object[@"desc"];
  
     
-    NSURL *aURL = [NSURL URLWithString:object[@"image"]];
-    NSData *data = [NSData dataWithContentsOfURL:aURL];
-    UIImage *image = [UIImage imageWithData:data];
-    [cell.cakeImageView setImage:image];
-    
+//    NSURL *aURL = [NSURL URLWithString:object[@"image"]];
+//    NSData *data = [NSData dataWithContentsOfURL:aURL];
+//    UIImage *image = [UIImage imageWithData:data];
+//    [cell.cakeImageView setImage:image];
+    [cell updateWithViewModel:self.viewModel.viewModels[indexPath.row]];
     return cell;
 }
 
@@ -61,7 +67,7 @@
                        options:kNilOptions
                        error:&jsonError];
     if (!jsonError){
-        self.objects = responseData;
+//        self.objects = responseData;
         [self.tableView reloadData];
     } else {
     }
