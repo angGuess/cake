@@ -25,6 +25,10 @@
 		DCDE172821F35E4800D56AA0 /* Cake.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE172621F35E4800D56AA0 /* Cake.swift */; };
 		DCDE172A21F37B3100D56AA0 /* UIImageView+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE172921F37B3100D56AA0 /* UIImageView+C.swift */; };
 		DCDE172B21F37B3100D56AA0 /* UIImageView+C.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE172921F37B3100D56AA0 /* UIImageView+C.swift */; };
+		DCDE172D21F3D35F00D56AA0 /* MasterViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE172C21F3D35F00D56AA0 /* MasterViewModelTest.swift */; };
+		DCDE172F21F3D59200D56AA0 /* cakes.json in Resources */ = {isa = PBXBuildFile; fileRef = DCDE172E21F3D59200D56AA0 /* cakes.json */; };
+		DCDE173121F3D73100D56AA0 /* CakeViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDE173021F3D73100D56AA0 /* CakeViewModelTest.swift */; };
+		DCDE173321F3D82C00D56AA0 /* cake.json in Resources */ = {isa = PBXBuildFile; fileRef = DCDE173221F3D82C00D56AA0 /* cake.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +54,6 @@
 		DBF17A271B0B648F004E6311 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		DBF17A2D1B0B648F004E6311 /* Cake ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Cake ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF17A321B0B648F004E6311 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DBF17A331B0B648F004E6311 /* Cake_ListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cake_ListTests.m; sourceTree = "<group>"; };
 		DBF17A3D1B0B8E16004E6311 /* CakeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CakeCell.h; sourceTree = "<group>"; };
 		DBF17A3E1B0B8E16004E6311 /* CakeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CakeCell.m; sourceTree = "<group>"; };
 		DCDE171321F3487200D56AA0 /* CakeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CakeCell.xib; sourceTree = "<group>"; };
@@ -62,6 +65,10 @@
 		DCDE172221F35D7B00D56AA0 /* CakeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeViewModel.swift; sourceTree = "<group>"; };
 		DCDE172621F35E4800D56AA0 /* Cake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cake.swift; sourceTree = "<group>"; };
 		DCDE172921F37B3100D56AA0 /* UIImageView+C.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+C.swift"; sourceTree = "<group>"; };
+		DCDE172C21F3D35F00D56AA0 /* MasterViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewModelTest.swift; sourceTree = "<group>"; };
+		DCDE172E21F3D59200D56AA0 /* cakes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cakes.json; sourceTree = "<group>"; };
+		DCDE173021F3D73100D56AA0 /* CakeViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CakeViewModelTest.swift; sourceTree = "<group>"; };
+		DCDE173221F3D82C00D56AA0 /* cake.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cake.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +120,8 @@
 				DCDE171521F34A5200D56AA0 /* Extensions */,
 				DCDE171D21F3521100D56AA0 /* Cake List-Bridging-Header.h */,
 				DCDE171921F351C200D56AA0 /* Cake ListTests-Bridging-Header.h */,
+				DCDE172E21F3D59200D56AA0 /* cakes.json */,
+				DCDE173221F3D82C00D56AA0 /* cake.json */,
 				DBF17A141B0B648F004E6311 /* Supporting Files */,
 				DCDE171E21F3553100D56AA0 /* PrefixHeader.pch */,
 			);
@@ -131,6 +140,8 @@
 		DBF17A301B0B648F004E6311 /* Cake ListTests */ = {
 			isa = PBXGroup;
 			children = (
+				DCDE173021F3D73100D56AA0 /* CakeViewModelTest.swift */,
+				DCDE172C21F3D35F00D56AA0 /* MasterViewModelTest.swift */,
 				DBF17A311B0B648F004E6311 /* Supporting Files */,
 			);
 			path = "Cake ListTests";
@@ -276,6 +287,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCDE172F21F3D59200D56AA0 /* cakes.json in Resources */,
+				DCDE173321F3D82C00D56AA0 /* cake.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +319,8 @@
 				DCDE171C21F351C300D56AA0 /* WebService.swift in Sources */,
 				DCDE172821F35E4800D56AA0 /* Cake.swift in Sources */,
 				DCDE172421F35D7B00D56AA0 /* CakeViewModel.swift in Sources */,
+				DCDE172D21F3D35F00D56AA0 /* MasterViewModelTest.swift in Sources */,
+				DCDE173121F3D73100D56AA0 /* CakeViewModelTest.swift in Sources */,
 				DCDE172121F35C6000D56AA0 /* MasterViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
